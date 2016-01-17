@@ -1,0 +1,73 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.1.1/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.1.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.5.2
+3 info using node@v4.1.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/ubuntu/workspace/solns',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/ubuntu/.npm/manley/1.0.0/package.tgz not in flight; packing
+9 info lifecycle manley@1.0.0~prepublish: manley@1.0.0
+10 silly lifecycle manley@1.0.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/home/ubuntu/.npm/manley/1.0.0/package.tgz',
+11 verbose tar pack   '/home/ubuntu/workspace/solns' ]
+12 verbose tarball /home/ubuntu/.npm/manley/1.0.0/package.tgz
+13 verbose folder /home/ubuntu/workspace/solns
+14 verbose addLocalTarball adding from inside cache /home/ubuntu/.npm/manley/1.0.0/package.tgz
+15 silly cache afterAdd manley@1.0.0
+16 verbose afterAdd /home/ubuntu/.npm/manley/1.0.0/package/package.json not in flight; writing
+17 verbose afterAdd /home/ubuntu/.npm/manley/1.0.0/package/package.json written
+18 silly publish { name: 'manley',
+18 silly publish   version: '1.0.0',
+18 silly publish   description: 'math',
+18 silly publish   main: 'avg.js',
+18 silly publish   scripts: { test: 'node test.js' },
+18 silly publish   keywords: [ 'math' ],
+18 silly publish   author: { name: 'davemanley' },
+18 silly publish   license: 'ISC',
+18 silly publish   dependencies: { '@linclark/pkg': '^1.0.2' },
+18 silly publish   devDependencies: {},
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/www.github.com/manley1971.git' },
+18 silly publish   bugs: { url: 'https://github.com/www.github.com/manley1971/issues' },
+18 silly publish   homepage: 'https://github.com/www.github.com/manley1971#readme',
+18 silly publish   readme: 'ERROR: No README data found!',
+18 silly publish   _id: 'manley@1.0.0',
+18 silly publish   _shasum: '209951b40be18c20d68f8157529213ace45065bd',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name manley
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry http://localhost:15443/
+23 silly mapToRegistry uri http://localhost:15443/manley
+24 verbose publish registryBase http://localhost:15443/
+25 silly publish uploading /home/ubuntu/.npm/manley/1.0.0/package.tgz
+26 verbose stack Error: auth required for publishing
+26 verbose stack     at CachingRegistryClient.publish (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+26 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/lib/publish.js:137:14
+26 verbose stack     at mapToRegistry (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/lib/utils/map-to-registry.js:55:3)
+26 verbose stack     at publish_ (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/lib/publish.js:106:3)
+26 verbose stack     at Array.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+26 verbose stack     at LOOP (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+26 verbose stack     at LOOP (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+26 verbose stack     at chain (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+26 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/lib/publish.js:72:5
+26 verbose stack     at RES (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+27 verbose cwd /home/ubuntu/workspace/solns
+28 error Linux 4.2.0-c9
+29 error argv "/home/ubuntu/.nvm/versions/node/v4.1.1/bin/node" "/home/ubuntu/.nvm/versions/node/v4.1.1/bin/npm" "publish"
+30 error node v4.1.1
+31 error npm  v3.5.2
+32 error code ENEEDAUTH
+33 error need auth auth required for publishing
+34 error need auth You need to authorize this machine using `npm adduser`
+35 verbose exit [ 1, true ]

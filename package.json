@@ -1,0 +1,26 @@
+{
+  "name": "manley",
+  "version": "1.0.0",
+  "description": "math",
+  "main": "avg.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "math"
+  ],
+  "author": "davemanley",
+  "license": "ISC",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/www.github.com/manley1971.git"
+  },
+  "bugs": {
+    "url": "https://github.com/www.github.com/manley1971/issues"
+  },
+  "homepage": "https://github.com/www.github.com/manley1971#readme"
+}
